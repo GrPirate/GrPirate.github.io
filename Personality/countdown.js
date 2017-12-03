@@ -1,6 +1,6 @@
 const WINDOW_WIDTH = document.body.clientWidth;
 const WINDOW_HEIGHT = 789;
-const RADIUS = parseInt(document.body.clientWidth/120);
+const RADIUS = parseInt(document.body.clientWidth / 120);
 const MARGIN_LEFT = 100;
 const MARGIN_TOP = 20;
 const COLOR = "#086B70";
@@ -27,7 +27,7 @@ class Ball {
         this.color = color;
         this.ctx = ctx;
         this.g = 2;
-        this.vx = Math.pow(-1,Math.round(Math.random()))*Math.ceil(Math.random()*10);
+        this.vx = Math.pow(-1, Math.round(Math.random())) * (Math.ceil(Math.random() * 10) + 1);
         this.vy = -10;
     }
 
@@ -40,9 +40,9 @@ class Ball {
             this.vy = -this.vy * 0.75;
         }
 
-        if(this.x+RADIUS>WINDOW_WIDTH){
-            this.x=WINDOW_WIDTH-RADIUS;
-            this.vx=-this.vx;
+        if (this.x + RADIUS > WINDOW_WIDTH) {
+            this.x = WINDOW_WIDTH - RADIUS;
+            this.vx = -this.vx;
         }
     }
 
@@ -56,7 +56,7 @@ class Ball {
 
 function getCurrentShowTime() {
     let currentTime = new Date();
-    let result = parseInt((END_TIME.getTime() - currentTime.getTime())/1000);
+    let result = parseInt((END_TIME.getTime() - currentTime.getTime()) / 1000);
     return result >= 0 ? result : 0;
 }
 
@@ -86,7 +86,7 @@ function render(ctx) {
 }
 
 function renderDigit(x, y, num, ctx) {
-    ctx.fillStyle = "#5F0D7E"
+    ctx.fillStyle = COLOR;
     for (let i = 0, len = digit[num].length; i < len; i++)
         for (let j = 0, lenj = digit[num][i].length; j < lenj; j++)
             if (digit[num][i][j] == 1) {
@@ -114,11 +114,11 @@ function renderBall() {
 
     // 性能优化：删除滚落屏幕外小球
     var cnt = 0
-    for( var i = 0 ; i < balls.length ; i ++ )
-        if( balls[i].x + RADIUS > 0 && balls[i].x -RADIUS < WINDOW_WIDTH )
+    for (var i = 0; i < balls.length; i++)
+        if (balls[i].x + RADIUS > 0 && balls[i].x - RADIUS < WINDOW_WIDTH)
             balls[cnt++] = balls[i]
 
-    while( balls.length > cnt ){
+    while (balls.length > cnt) {
         balls.pop();
     }
 }

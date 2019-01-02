@@ -352,7 +352,7 @@
       
 
       
-        <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>一直以来都想搭建一个属于自己的博客，奈何自己学识尚浅，所需要的知识太多，无从下手。无意间在一篇软文中了解到<a href="https://pages.github.com/" target="_blank" rel="external">Github Pages</a>+<a href="https://hexo.io/" target="_blank" rel="external">HEXO</a>这如此高大上的框架，才了解到原来搭建博客可以这么简单。</p>
+        <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>一直以来都想搭建一个属于自己的博客，奈何自己学识尚浅，所需要的知识太多，无从下手。无意间在一篇软文中了解到<a href="https://pages.github.com/" target="_blank" rel="noopener">Github Pages</a>+<a href="https://hexo.io/" target="_blank" rel="noopener">HEXO</a>这如此高大上的框架，才了解到原来搭建博客可以这么简单。</p>
 <a id="more"></a>
 <h2 id="GitHub-Pages的优势"><a href="#GitHub-Pages的优势" class="headerlink" title="GitHub Pages的优势"></a>GitHub Pages的优势</h2><ul>
 <li>1、GitHub Pages 提供了 300M 免费空间，资料自己管理，保存可靠；</li>
@@ -371,8 +371,8 @@
 </ul>
 <h1 id="本地使用Hexo生成静态博客"><a href="#本地使用Hexo生成静态博客" class="headerlink" title="本地使用Hexo生成静态博客"></a>本地使用Hexo生成静态博客</h1><h2 id="一、运行环境准备"><a href="#一、运行环境准备" class="headerlink" title="一、运行环境准备"></a>一、运行环境准备</h2><ul>
 <li>操作系统：Windows7+</li>
-<li><strong><a href="https://nodejs.org/zh-cn/" target="_blank" rel="external">node.js</a></strong>:下载最新版，傻瓜式安装（一路next即可）</li>
-<li><strong><a href="https://git-scm.com/" target="_blank" rel="external">git</a></strong>:下载最新版，傻瓜式安装（一路next即可）</li>
+<li><strong><a href="https://nodejs.org/zh-cn/" target="_blank" rel="noopener">node.js</a></strong>:下载最新版，傻瓜式安装（一路next即可）</li>
+<li><strong><a href="https://git-scm.com/" target="_blank" rel="noopener">git</a></strong>:下载最新版，傻瓜式安装（一路next即可）</li>
 </ul>
 <p>安装完成后打开任意文件夹，在空白处单击右键，选项中有<code>Git Bash Here</code>则说明git下载成功，打开<code>Git Bash Here</code>输入如下命令</p>
 <pre><code>node -v
@@ -393,11 +393,11 @@
 <pre><code>npm install
 </code></pre><p> 5.启动服务进行本地预览(括号里为全称)</p>
 <pre><code>hexo s(server)
-</code></pre><p>当看到<code>INFO  Hexo is running at http://localhost:4000/. Press Ctrl+C to stop.</code>时就说明我们已经搭建起本地的hexo博客了，此时只要在浏览器中输入<em><a href="http://localhost:4000/" target="_blank" rel="external">http://localhost:4000/</a></em>就可以看到我们的博客了</p>
+</code></pre><p>当看到<code>INFO  Hexo is running at http://localhost:4000/. Press Ctrl+C to stop.</code>时就说明我们已经搭建起本地的hexo博客了，此时只要在浏览器中输入<em><a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a></em>就可以看到我们的博客了</p>
 <p><img src="20171117143352.png" alt=""></p>
-<p>怎么样，是不是很酷，这是hexo的默认主题<code>landscape</code>.当然hexo还有很多<a href="https://hexo.io/themes/" target="_blank" rel="external">漂亮的主题</a>供我们选择，这是<a href="https://grpirate.github.io/" target="_blank" rel="external">我的博客</a>，使用了<a href="http://theme-next.iissnan.com/" target="_blank" rel="external">Next主题</a></p>
+<p>怎么样，是不是很酷，这是hexo的默认主题<code>landscape</code>.当然hexo还有很多<a href="https://hexo.io/themes/" target="_blank" rel="noopener">漂亮的主题</a>供我们选择，这是<a href="https://grpirate.github.io/" target="_blank" rel="noopener">我的博客</a>，使用了<a href="http://theme-next.iissnan.com/" target="_blank" rel="noopener">Next主题</a></p>
 <h1 id="创建GitHub-Pages"><a href="#创建GitHub-Pages" class="headerlink" title="创建GitHub Pages"></a>创建GitHub Pages</h1><blockquote>
-<p>首先你得拥有github账号，如果没有点击<a href="https://github.com/" target="_blank" rel="external">这里</a>进行注册</p>
+<p>首先你得拥有github账号，如果没有点击<a href="https://github.com/" target="_blank" rel="noopener">这里</a>进行注册</p>
 </blockquote>
 <p><strong>好，如果你已经有了账号，可以继续往下读了</strong></p>
 <h2 id="创建仓库"><a href="#创建仓库" class="headerlink" title="创建仓库"></a>创建仓库</h2><p><img src="20171117150123.png" alt=""><br>登录账号后，在Github页面的右上方选择New repository进行仓库的创建。<br><img src="20171117150445.png" alt=""></p>
@@ -418,7 +418,7 @@
 </blockquote>
 <p>如果对文件做了修改使用一下三个命令部署即可</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
-<p>到这里我们就已经完成了博客的部署工作，在浏览器中输入<em><a href="https://xxx.github.io" target="_blank" rel="external">https://xxx.github.io</a></em>就可以看到我们的博客网站了</p>
+<p>到这里我们就已经完成了博客的部署工作，在浏览器中输入<em><a href="https://xxx.github.io" target="_blank" rel="noopener">https://xxx.github.io</a></em>就可以看到我们的博客网站了</p>
 <h1 id="写博客"><a href="#写博客" class="headerlink" title="写博客"></a>写博客</h1><ol>
 <li>创建文章</li>
 </ol>
@@ -658,7 +658,7 @@ var jiathis_config={
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#GitHub-Pages的优势"><span class="nav-number">1.1.</span> <span class="nav-text">GitHub Pages的优势</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#什么是Hexo"><span class="nav-number">1.2.</span> <span class="nav-text">什么是Hexo</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#本地使用Hexo生成静态博客"><span class="nav-number">2.</span> <span class="nav-text">本地使用Hexo生成静态博客</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#一、运行环境准备"><span class="nav-number">2.1.</span> <span class="nav-text">一、运行环境准备</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二、安装HEXO"><span class="nav-number">2.2.</span> <span class="nav-text">二、安装HEXO</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#创建GitHub-Pages"><span class="nav-number">3.</span> <span class="nav-text">创建GitHub Pages</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#创建仓库"><span class="nav-number">3.1.</span> <span class="nav-text">创建仓库</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#部署到GitHub-Pages"><span class="nav-number">4.</span> <span class="nav-text">部署到GitHub Pages</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#写博客"><span class="nav-number">5.</span> <span class="nav-text">写博客</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text"><a href="#&#x524D;&#x8A00;" class="headerlink" title="&#x524D;&#x8A00;"></a>&#x524D;&#x8A00;</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#GitHub-Pages的优势"><span class="nav-number">1.1.</span> <span class="nav-text"><a href="#GitHub-Pages&#x7684;&#x4F18;&#x52BF;" class="headerlink" title="GitHub Pages&#x7684;&#x4F18;&#x52BF;"></a>GitHub Pages&#x7684;&#x4F18;&#x52BF;</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#什么是Hexo"><span class="nav-number">1.2.</span> <span class="nav-text"><a href="#&#x4EC0;&#x4E48;&#x662F;Hexo" class="headerlink" title="&#x4EC0;&#x4E48;&#x662F;Hexo"></a>&#x4EC0;&#x4E48;&#x662F;Hexo</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#本地使用Hexo生成静态博客"><span class="nav-number">2.</span> <span class="nav-text"><a href="#&#x672C;&#x5730;&#x4F7F;&#x7528;Hexo&#x751F;&#x6210;&#x9759;&#x6001;&#x535A;&#x5BA2;" class="headerlink" title="&#x672C;&#x5730;&#x4F7F;&#x7528;Hexo&#x751F;&#x6210;&#x9759;&#x6001;&#x535A;&#x5BA2;"></a>&#x672C;&#x5730;&#x4F7F;&#x7528;Hexo&#x751F;&#x6210;&#x9759;&#x6001;&#x535A;&#x5BA2;</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#一、运行环境准备"><span class="nav-number">2.1.</span> <span class="nav-text"><a href="#&#x4E00;&#x3001;&#x8FD0;&#x884C;&#x73AF;&#x5883;&#x51C6;&#x5907;" class="headerlink" title="&#x4E00;&#x3001;&#x8FD0;&#x884C;&#x73AF;&#x5883;&#x51C6;&#x5907;"></a>&#x4E00;&#x3001;&#x8FD0;&#x884C;&#x73AF;&#x5883;&#x51C6;&#x5907;</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二、安装HEXO"><span class="nav-number">2.2.</span> <span class="nav-text"><a href="#&#x4E8C;&#x3001;&#x5B89;&#x88C5;HEXO" class="headerlink" title="&#x4E8C;&#x3001;&#x5B89;&#x88C5;HEXO"></a>&#x4E8C;&#x3001;&#x5B89;&#x88C5;HEXO</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#创建GitHub-Pages"><span class="nav-number">3.</span> <span class="nav-text"><a href="#&#x521B;&#x5EFA;GitHub-Pages" class="headerlink" title="&#x521B;&#x5EFA;GitHub Pages"></a>&#x521B;&#x5EFA;GitHub Pages</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#创建仓库"><span class="nav-number">3.1.</span> <span class="nav-text"><a href="#&#x521B;&#x5EFA;&#x4ED3;&#x5E93;" class="headerlink" title="&#x521B;&#x5EFA;&#x4ED3;&#x5E93;"></a>&#x521B;&#x5EFA;&#x4ED3;&#x5E93;</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#部署到GitHub-Pages"><span class="nav-number">4.</span> <span class="nav-text"><a href="#&#x90E8;&#x7F72;&#x5230;GitHub-Pages" class="headerlink" title="&#x90E8;&#x7F72;&#x5230;GitHub Pages"></a>&#x90E8;&#x7F72;&#x5230;GitHub Pages</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#写博客"><span class="nav-number">5.</span> <span class="nav-text"><a href="#&#x5199;&#x535A;&#x5BA2;" class="headerlink" title="&#x5199;&#x535A;&#x5BA2;"></a>&#x5199;&#x535A;&#x5BA2;</span></a></li></ol></div>
             
 
           </div>
